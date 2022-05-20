@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const VideoWrapper = styled.div`
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;    
     margin-top 140px;
     padding: 0 24px;

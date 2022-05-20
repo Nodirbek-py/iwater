@@ -4,7 +4,7 @@ export const CardsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 140px;
   padding: 0 12px;
@@ -42,7 +42,7 @@ export const Card = styled.div`
   }
   @media (min-width: 1024px) {
     min-width: 250px;
-    padding: 30px 60px;
+    padding: 30px 44px;
     img {
       width: 61px !important;
       height: 61px !important;

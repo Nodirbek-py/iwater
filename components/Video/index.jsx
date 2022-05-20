@@ -12,7 +12,7 @@ const Video = () => {
         height="600"
         alt="iWater - Video about the product"
       />
-      <Text h3>
+      <Text type="h3">
         Average <BlueText>20%</BlueText> Savings Per Hotel Client
       </Text>
     </VideoWrapper>

@@ -45,7 +45,7 @@ const Cards = () => {
               height="61"
               objectFit="scale-down"
             />
-            <Text p align="center">
+            <Text type="p" align="center">
               {content.text}
             </Text>
           </Card>
