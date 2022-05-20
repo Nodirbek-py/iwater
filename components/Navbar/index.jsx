@@ -22,7 +22,12 @@ const Navbar = () => {
     <Nav>
       <NavContent>
         <Link href="http://localhost:3000/">
-          <Image src="/icons/logo.svg" width="130" height="73" />
+          <Image
+            src="/icons/logo.svg"
+            width="130"
+            height="73"
+            alt="iWater - Logo"
+          />
         </Link>
         {width > 1024 ? (
           <NavLinks>
