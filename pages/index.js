@@ -1,7 +1,9 @@
 import Head from "next/head";
 
-import Jumbotron from "../components/Jumbotron";
 import Layout from "./layout";
+import Jumbotron from "../components/Jumbotron";
+import Cards from "../components/Cards";
+import Video from "../components/Video";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <main>
         <Layout>
           <Jumbotron />
+          <Cards />
+          <Video />
         </Layout>
       </main>
     </div>
