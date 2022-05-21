@@ -9,15 +9,22 @@ export const ReferencesWrapper = styled.div`
 `;
 
 export const ReferencesCard = styled.div`
+  margin: 10px 5px;
   display: flex;
   align-items: center;
   padding: 40px;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 0px 4px 24px -7px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 4px 5px -7px rgba(0, 0, 0, 0.08);
   min-height: 175px;
   & > div {
     margin-left: 25px;
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+    padding: 20px 10px;
+    justify-content: space-around;
+    min-height: 250px;
   }
   &:hover {
     cursor: pointer;
@@ -54,12 +61,18 @@ export const LeftArrow = styled.div`
   &:hover {
     cursor: pointer;
   }
+  @media (max-width: 640px) {
+    right: -50px;
+  }
 `;
 
 export const RightArrow = styled(LeftArrow)`
   background-image: url("/icons/left.svg");
   margin-left: 36px;
   left: 0px;
+  @media (max-width: 640px) {
+    left: -50px;
+  }
 `;
 
 export const SliderWrapper = styled.div`
@@ -69,4 +82,7 @@ export const SliderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
+  @media (max-width: 640px) {
+    padding: 0;
+  }
 `;
