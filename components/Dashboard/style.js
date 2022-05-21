@@ -8,8 +8,23 @@ export const DashboardWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  h1,
+  p {
+    text-align: center;
+  }
+  div{
+      margin-bottom: 24px;
+  }
 
-  div {
-    width: 35%;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    div {
+      width: 35%;
+    }
+    h1,
+    p {
+      text-align: left;
+    }
   }
 `;

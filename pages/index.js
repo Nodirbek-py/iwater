@@ -5,6 +5,7 @@ import Jumbotron from "../components/Jumbotron";
 import Cards from "../components/Cards";
 import Video from "../components/Video";
 import Dashboard from "../components/Dashboard";
+import Mentions from "../components/Mentions";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <Cards />
           <Video />
           <Dashboard />
+          <Mentions />
         </Layout>
       </main>
     </div>
