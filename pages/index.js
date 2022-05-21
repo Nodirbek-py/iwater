@@ -7,6 +7,7 @@ import Video from "../components/Video";
 import Dashboard from "../components/Dashboard";
 import Mentions from "../components/Mentions";
 import Features from "../components/Features";
+import References from "../components/References";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <Dashboard />
           <Mentions />
           <Features />
+          <References />
         </Layout>
       </main>
     </div>
