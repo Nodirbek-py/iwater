@@ -6,13 +6,13 @@ import Cards from "../components/Cards";
 import Video from "../components/Video";
 import Dashboard from "../components/Dashboard";
 import Mentions from "../components/Mentions";
+import Features from "../components/Features";
 
 export default function Home() {
   return (
     <div className="main h-screen">
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="iWater - Reduction Without Regret" />
+        <title>iWater - Reduction Without Regret</title>
         <meta
           name="description"
           content="Take control of your water and bottom line with iWater, meet WES."
@@ -26,6 +26,7 @@ export default function Home() {
           <Video />
           <Dashboard />
           <Mentions />
+          <Features />
         </Layout>
       </main>
     </div>
