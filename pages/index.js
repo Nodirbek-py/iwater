@@ -9,6 +9,7 @@ import Mentions from "../components/Mentions";
 import Features from "../components/Features";
 import References from "../components/References";
 import Team from "../components/Team";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
           <Features />
           <References />
           <Team />
+          <FAQ />
         </Layout>
       </main>
     </div>
