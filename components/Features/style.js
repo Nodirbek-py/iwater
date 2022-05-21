@@ -25,6 +25,14 @@ export const FeaturesCard = styled.div`
   border-radius: 20px;
   background: #fefeff;
   box-shadow: 0px 4px 24px -7px rgba(0, 0, 0, 0.08);
+  position: relative;
+  bottom: 0;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 24px -7px rgba(0, 0, 0, 0.2);
+    bottom: 5px;
+    transition: all 0.2s;
+  }
 `;
 
 export const FeaturesHeading = styled(Heading1)`
