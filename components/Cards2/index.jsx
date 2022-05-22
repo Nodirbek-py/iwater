@@ -1,15 +1,25 @@
-import Image from "next/image";
-
-import Text from "../../shared/text";
-import { Wrapper, Price, Ul, ImageWrapper } from "./style";
+import Card from "./Card";
+import { cards } from "./config";
+import { Wrapper, CardWrapper } from "./style";
 
 const Cards2 = () => {
   return (
     <Wrapper>
-      <ImageWrapper></ImageWrapper>
-      <Price></Price>
+      {cards.map((item, key) => (
+        <CardWrapper key={key}>
+          <Card
+            img={item.img}
+            title={item.title}
+            warranty={item.warranty}
+            info={item.info}
+            price={item.price.amount}
+            per={item.price.per}
+            cardType={item.cardType}
+          />
+        </CardWrapper>
+      ))}
     </Wrapper>
   );
 };
 
-export default Cards;
+export default Cards2;
