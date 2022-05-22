@@ -10,6 +10,7 @@ import Features from "../components/Features";
 import References from "../components/References";
 import Team from "../components/Team";
 import FAQ from "../components/FAQ";
+import Buy from "../components/Buy";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
           <References />
           <Team />
           <FAQ />
+          <Buy />
         </Layout>
       </main>
     </div>
