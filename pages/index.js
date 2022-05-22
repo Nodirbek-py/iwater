@@ -11,6 +11,7 @@ import References from "../components/References";
 import Team from "../components/Team";
 import FAQ from "../components/FAQ";
 import Buy from "../components/Buy";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           <Team />
           <FAQ />
           <Buy />
+          <Contact />
         </Layout>
       </main>
     </div>
