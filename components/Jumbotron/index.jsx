@@ -16,7 +16,7 @@ const Jumbotron = () => {
         <Image
           src="/imgs/tech.png"
           width="420"
-          height="350"
+          height="375"
           alt="iWater - Hardware picture"
         />
       </ImageWrapper>

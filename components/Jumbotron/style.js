@@ -31,7 +31,7 @@ export const ImageWrapper = styled.div`
     width: 500px;
     img {
       width: 420px !important;
-      height: 350px !important;
+      height: 375px !important;
     }
   }
 `;
