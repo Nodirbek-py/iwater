@@ -33,6 +33,12 @@ export const TeamCard = styled.div`
     height: auto !important;
     transform: scale(1.7);
     margin-top: 100px;
+    @supports (-ms-ime-align: auto) {
+      img {
+        margin-top: 50px;
+        transform: scale(1);
+      }
+    }
   }
   @media (max-width: 1024px) {
     margin: 30px 0;
