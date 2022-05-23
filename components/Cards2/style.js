@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 0 auto;
-  margin-top: 160px;
+  margin-top: 200px;
 
   display: grid;
   grid-template-columns: 1fr;
   gap: 140px 0;
-  max-width: 400px;
+  max-width: 345px;
 
   @media (min-width: 950px) {
     max-width: 880px;
@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
 `;
 
 export const CardWrapper = styled.div`
-  width: 400px;
+  width: 345px;
   display: flex;
   align-items: flex-end;
 `;

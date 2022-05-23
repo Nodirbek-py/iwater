@@ -1,34 +1,56 @@
 import styled from "styled-components";
 
+import { colors } from "../config";
+
 export const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  background-color: red;
+  gap: 40px;
   border-radius: 20px;
+  height: ${({ cardType }) => (cardType === "1" ? "570" : "808")}px;
+  background-color: ${({ cardType }) => colors[cardType].background};
+  color: ${({ cardType }) => colors[cardType].text};
+
+  & p {
+    color: ${({ cardType }) => colors[cardType].text};
+  }
+
+  & h1 {
+    color: ${({ cardType }) => colors[cardType].text};
+    font-size: 36px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   position: absolute;
-  top: ${({ cardType }) => (cardType === 1 ? "-100" : "-120")}px;
+  top: ${({ cardType }) => (cardType === "1" ? "-100" : "-120")}px;
 `;
 
 export const ContentWrapper = styled.div`
-  padding-top: ${({ cardType }) => (cardType === 1 ? "150" : "190")}px;
+  padding-top: ${({ cardType }) => (cardType === "1" ? "150" : "190")}px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   & > p {
     font-size: 15px;
-    width: 70%;
+    width: 80%;
     text-align: center;
   }
 
-  & > button {
+  & button {
     margin: 20px 0 20px;
+    background-color: ${({ cardType }) => colors[cardType].text};
+    color: ${({ cardType }) => colors[cardType].background};
+    border-color: transparent;
+
+    &:hover {
+      background-color: ${({ cardType }) => colors[cardType].background};
+      color: ${({ cardType }) => colors[cardType].text};
+      border-color: ${({ cardType }) => colors[cardType].text};
+    }
   }
 `;
 
@@ -44,10 +66,14 @@ export const InfoWrapper = styled.div`
   }
 `;
 
+export const PriceWrapper = styled.div`
+  position: absolute;
+  bottom: 40px;
+`;
+
 export const Price = styled.div`
   display: flex;
   align-items: flex-end;
-  margin-top: 20px;
 
   & > p {
     font-size: 12px;
@@ -56,12 +82,11 @@ export const Price = styled.div`
 
 export const UList = styled.div`
   margin-top: 20px;
-  display: inline-block;
+  padding: 0 20px;
 
   & li {
-  }
-
-  & p {
     font-size: 15px;
+    line-height: 26px;
+    word-break: break-word;
   }
 `;

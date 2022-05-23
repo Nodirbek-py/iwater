@@ -1,3 +1,18 @@
+export const colors = {
+  1: {
+    background: "#fff",
+    text: "#0a71b7",
+  },
+  2: {
+    background: "#86ccff",
+    text: "#fff",
+  },
+  3: {
+    background: "#0a71b7",
+    text: "#fff",
+  },
+};
+
 export const cards = [
   {
     img: {
@@ -13,7 +28,7 @@ export const cards = [
     price: {
       amount: "$250",
     },
-    cardType: 1,
+    cardType: "1",
   },
   {
     img: {
@@ -31,7 +46,7 @@ export const cards = [
       amount: "$15",
       per: "/Month",
     },
-    cardType: 2,
+    cardType: "2",
   },
   {
     img: {
@@ -50,6 +65,6 @@ export const cards = [
       amount: "$17",
       per: "/Month",
     },
-    cardType: 2,
+    cardType: "3",
   },
 ];

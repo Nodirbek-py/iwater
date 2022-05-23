@@ -6,20 +6,20 @@ import {
   ImageWrapper,
   Price,
   InfoWrapper,
+  PriceWrapper,
   UList,
   ContentWrapper,
 } from "./style";
 
 const Card = ({ img, title, warranty, info, price, per, cardType }) => {
   return (
-    <Wrapper>
+    <Wrapper cardType={cardType}>
       <ImageWrapper cardType={cardType}>
         <Image
           src={img.src}
           alt={title}
           width={img.width}
           height={img.height}
-          //   objectFit="scale-down"
         />
       </ImageWrapper>
       <ContentWrapper cardType={cardType}>
@@ -29,18 +29,18 @@ const Card = ({ img, title, warranty, info, price, per, cardType }) => {
         <Text align="center">{warranty}</Text>
         <UList>
           {info.map((item, key) => (
-            <li key={key}>
-              <Text>{item}</Text>
-            </li>
+            <li key={key}>{item}</li>
           ))}
         </UList>
-        <Price>
-          <Text type="h3" align="center">
-            {price}
-          </Text>
-          <Text type="p">{per}</Text>
-        </Price>
-        <Button text="Buy Now" />
+        <PriceWrapper>
+          <Price>
+            <Text type="h3" align="center">
+              {price}
+            </Text>
+            <Text type="p">{per}</Text>
+          </Price>
+          <Button text="Buy Now" />
+        </PriceWrapper>
       </ContentWrapper>
     </Wrapper>
   );

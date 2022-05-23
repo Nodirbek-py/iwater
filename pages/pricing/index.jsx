@@ -5,9 +5,11 @@ import Mentions from "../../components/Mentions";
 import { pricing } from "../../config/pages";
 import Cards from "../../components/Cards2";
 
+import { Wrapper } from "./style";
+
 export default function Pricing() {
   return (
-    <div>
+    <Wrapper>
       <Jumbotron
         title={pricing.jumbotron.title}
         body={pricing.jumbotron.body}
@@ -16,6 +18,6 @@ export default function Pricing() {
       <FAQ />
       <Dashboard />
       <Mentions />
-    </div>
+    </Wrapper>
   );
 }
