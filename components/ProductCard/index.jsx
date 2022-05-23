@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Text from "../../../shared/text";
-import Button from "../../../shared/button";
+import Text from "../../shared/text";
+import Button from "../../shared/button";
 import {
   Wrapper,
   ImageWrapper,
@@ -11,7 +11,16 @@ import {
   ContentWrapper,
 } from "./style";
 
-const Card = ({ img, title, warranty, info, price, per, cardType }) => {
+const ProductCard = ({
+  img,
+  title,
+  warranty,
+  info,
+  price,
+  per,
+  cardType,
+  buttonTitle,
+}) => {
   return (
     <Wrapper cardType={cardType}>
       <ImageWrapper cardType={cardType}>
@@ -27,23 +36,23 @@ const Card = ({ img, title, warranty, info, price, per, cardType }) => {
           {title}
         </Text>
         <Text align="center">{warranty}</Text>
-        <UList>
+        <UList className="ulist">
           {info.map((item, key) => (
             <li key={key}>{item}</li>
           ))}
         </UList>
-        <PriceWrapper>
+        <PriceWrapper className="price-wrapper">
           <Price>
             <Text type="h3" align="center">
               {price}
             </Text>
             <Text type="p">{per}</Text>
           </Price>
-          <Button text="Buy Now" />
+          <Button text={buttonTitle ? buttonTitle : "Buy Now"} />
         </PriceWrapper>
       </ContentWrapper>
     </Wrapper>
   );
 };
 
-export default Card;
+export default ProductCard;

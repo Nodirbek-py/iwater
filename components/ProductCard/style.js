@@ -68,6 +68,9 @@ export const InfoWrapper = styled.div`
 
 export const PriceWrapper = styled.div`
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   bottom: 40px;
 `;
 

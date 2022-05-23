@@ -1,5 +1,5 @@
-import Card from "./Card";
-import { cards } from "./config";
+import ProductCard from "../ProductCard";
+import { cards } from "../config";
 import { Wrapper, CardWrapper } from "./style";
 
 const Cards2 = () => {
@@ -7,7 +7,7 @@ const Cards2 = () => {
     <Wrapper>
       {cards.map((item, key) => (
         <CardWrapper key={key}>
-          <Card
+          <ProductCard
             img={item.img}
             title={item.title}
             warranty={item.warranty}
