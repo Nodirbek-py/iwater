@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Text from "../../shared/text";
 import { TeamWrapper, TeamCards, TeamCard, TeamCardHeading } from "./style";
