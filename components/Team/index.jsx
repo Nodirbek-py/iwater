@@ -1,9 +1,17 @@
 import Image from "next/image";
+import { useEffect } from "react";
 
 import Text from "../../shared/text";
 import { TeamWrapper, TeamCards, TeamCard, TeamCardHeading } from "./style";
 
 const Team = () => {
+  const [isIE, setIsIE] = useState(false);
+  const [isEdge, setIsEdge] = useState(false);
+  useEffect(() => {
+    setIsIE(/MSIE|Trident/.test(window.navigator.userAgent));
+    setIsEdge(/Edge/.test(window.navigator.userAgent));
+  }, []);
+
   const team = [
     {
       img: "/icons/globe.png",
@@ -33,7 +41,7 @@ const Team = () => {
       <TeamCards>
         {team.map((item, i) => {
           return (
-            <TeamCard key={i}>
+            <TeamCard key={i} isIE={isIE} isEdge={isEdge}>
               <Image
                 src={item.img}
                 alt={item.text}
