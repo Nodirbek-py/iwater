@@ -5,7 +5,7 @@ import Mentions from "../../components/Mentions";
 import { pricing } from "../../config/pages";
 import Cards from "../../components/Cards2";
 
-import { Wrapper } from "./style";
+import { Wrapper } from "../../components/sharedStyle";
 
 export default function Pricing() {
   return (
