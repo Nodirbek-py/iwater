@@ -20,6 +20,7 @@ const ProductCard = ({
   per,
   cardType,
   buttonTitle,
+  btnOnClick,
 }) => {
   return (
     <Wrapper cardType={cardType}>
