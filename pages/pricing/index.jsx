@@ -5,11 +5,7 @@ import Mentions from "../../components/Mentions";
 import { pricing } from "../../config/pages";
 import Cards from "../../components/Cards2";
 
-<<<<<<< HEAD
-import { Wrapper } from "../../components/Wrapper/style";
-=======
 import { Wrapper } from "../../components/sharedStyle";
->>>>>>> 6c14440f2ba5e1aaeaa927601604e4940b069327
 
 export default function Pricing() {
   return (

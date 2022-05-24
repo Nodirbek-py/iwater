@@ -5,7 +5,9 @@ import { StyledButton } from "./style";
 const Button = (props) => {
   return (
     <Link href={props.href ? props.href : "/"}>
-      <StyledButton style={props.style}>{props.text}</StyledButton>
+      <StyledButton onClick={props.onClick} style={props.style}>
+        {props.text}
+      </StyledButton>
     </Link>
   );
 };
