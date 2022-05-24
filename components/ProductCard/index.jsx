@@ -20,6 +20,7 @@ const ProductCard = ({
   per,
   cardType,
   buttonTitle,
+  btnOnClick,
 }) => {
   return (
     <Wrapper cardType={cardType}>
@@ -48,7 +49,10 @@ const ProductCard = ({
             </Text>
             <Text type="p">{per}</Text>
           </Price>
-          <Button text={buttonTitle ? buttonTitle : "Buy Now"} />
+          <Button
+            text={buttonTitle ? buttonTitle : "Buy Now"}
+            onClick={btnOnClick}
+          />
         </PriceWrapper>
       </ContentWrapper>
     </Wrapper>
