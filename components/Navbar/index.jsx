@@ -49,11 +49,11 @@ const Navbar = () => {
                   </NavLink>
                 </Link>
               ))}
-              <Button text="Buy Now" />
+              <Button href="/pricing/" text="Buy Now" />
             </Dropdown>
           )
         )}
-        {width > 1024 && <Button text="Buy Now" />}
+        {width > 1024 && <Button href="/pricing/" text="Buy Now" />}
         <Hamburger status={open} handler={setOpen} />
       </NavContent>
     </Nav>

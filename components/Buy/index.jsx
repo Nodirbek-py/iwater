@@ -43,7 +43,7 @@ const Buy = () => {
         <Text type="h1" align="left">
           Water and Energy Savings
         </Text>
-        <Button style={{ marginTop: 10 }} text="Buy now" />
+        <Button style={{ marginTop: 10 }} href="/pricing/" text="Buy now" />
       </div>
     </BuyWrapper>
   );

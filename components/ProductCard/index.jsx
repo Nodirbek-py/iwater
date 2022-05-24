@@ -48,7 +48,10 @@ const ProductCard = ({
             </Text>
             <Text type="p">{per}</Text>
           </Price>
-          <Button text={buttonTitle ? buttonTitle : "Buy Now"} />
+          <Button
+            href="/precheckout/"
+            text={buttonTitle ? buttonTitle : "Buy Now"}
+          />
         </PriceWrapper>
       </ContentWrapper>
     </Wrapper>
