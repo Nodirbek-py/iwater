@@ -3,7 +3,7 @@ import { cards } from "../config";
 
 import { Wrapper } from "./style";
 
-const CheckoutCard = () => {
+const CheckoutCard = ({ btnOnClick }) => {
   const item = cards[1];
 
   return (
@@ -17,6 +17,7 @@ const CheckoutCard = () => {
         per={item.price.per}
         cardType={item.cardType}
         buttonTitle={"Add to Cart"}
+        btnOnClick={btnOnClick}
       />
     </Wrapper>
   );
