@@ -11,7 +11,7 @@ import Popup from "../../components/Popup";
 import { precheckout } from "../../config/pages";
 import { modalStyle } from "../../config/modal";
 
-import { Wrapper } from "./style";
+import { Wrapper } from "../../components/sharedStyle";
 
 export default function PreCheckout() {
   const [isOpen, setIsOpen] = useState(false);

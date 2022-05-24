@@ -23,7 +23,6 @@ const Popup = ({ btnOnClick }) => {
                       id={key}
                       name={item.name}
                       value={options}
-                      checked={key === 0 && true}
                     />
                     <span>{options}</span>
                   </label>
