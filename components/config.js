@@ -21,6 +21,7 @@ export const cards = [
       height: "203",
     },
     title: "Basic",
+    id: "basic",
     warranty: "2 year warranty",
     info: [
       "Dashboard and data access is $50/year/device (includes one login for the dashboard)",
@@ -37,6 +38,7 @@ export const cards = [
       height: "256",
     },
     title: "Premium",
+    id: "premium",
     warranty: "iWater owns the device - lifetime warranty for defects",
     info: [
       "Dashboard and data access is $150/mo/unlimited devices (includes one login for the dashboard)",
@@ -55,6 +57,7 @@ export const cards = [
       height: "256",
     },
     title: "Premium Plus",
+    id: "premium-plus",
     warranty: "iWater owns the device - lifetime warranty for defects",
     info: [
       "Dashboard and data access is $150/mo/unlimited devices (includes one login for the dashboard)",

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
+import { useRouter } from "next/router";
 
 import Jumbotron from "../../components/Jumbotron";
 import Features from "../../components/Features";
@@ -15,6 +16,8 @@ import { Wrapper } from "../../components/sharedStyle";
 
 export default function PreCheckout() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const { type } = router;
 
   const closeModal = () => {
     setIsOpen(false);

@@ -51,7 +51,7 @@ const ProductCard = ({
           </Price>
           <Button
             onClick={btnOnClick}
-            href="/precheckout/"
+            href={"/precheckout/" + title.toLowerCase()}
             text={buttonTitle ? buttonTitle : "Buy Now"}
           />
         </PriceWrapper>

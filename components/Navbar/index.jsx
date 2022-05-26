@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavContent>
-        <Link href="http://localhost:3000/">
+        <Link href="/">
           <Image
             src="/icons/logo.svg"
             width="130"
