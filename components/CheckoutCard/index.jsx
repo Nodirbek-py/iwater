@@ -11,13 +11,13 @@ const CheckoutCard = ({ btnOnClick, type }) => {
     <Wrapper>
       <ProductCard
         type={type}
-        img={item.img}
-        title={item.title}
-        warranty={item.warranty}
-        info={item.info}
-        price={item.price.amount}
-        per={item.price.per}
-        cardType={item.cardType}
+        img={item?.img}
+        title={item?.title}
+        warranty={item?.warranty}
+        info={item?.info}
+        price={item?.price?.amount}
+        per={item?.price?.per}
+        cardType={item?.cardType}
         buttonTitle={"Add to Cart"}
         btnOnClick={btnOnClick}
       />

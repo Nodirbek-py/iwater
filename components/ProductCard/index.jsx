@@ -28,10 +28,10 @@ const ProductCard = ({
     <Wrapper cardType={cardType}>
       <ImageWrapper cardType={cardType}>
         <Image
-          src={img.src}
+          src={img?.src}
           alt={title}
-          width={img.width}
-          height={img.height}
+          width={img?.width}
+          height={img?.height}
         />
       </ImageWrapper>
       <ContentWrapper type={type} cardType={cardType}>
@@ -42,7 +42,7 @@ const ProductCard = ({
           {warranty}
         </Text>
         <UList className="ulist" type={type}>
-          {info.map((item, key) => (
+          {info?.map((item, key) => (
             <li key={key}>{item}</li>
           ))}
         </UList>

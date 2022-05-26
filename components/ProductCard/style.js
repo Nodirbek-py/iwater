@@ -10,15 +10,15 @@ export const Wrapper = styled.div`
   gap: 40px;
   border-radius: 20px;
   height: ${({ cardType }) => (cardType === "1" ? "570" : "808")}px;
-  background-color: ${({ cardType }) => colors[cardType].background};
-  color: ${({ cardType }) => colors[cardType].text};
+  background-color: ${({ cardType }) => colors[cardType]?.background};
+  color: ${({ cardType }) => colors[cardType]?.text};
 
   & p {
-    color: ${({ cardType }) => colors[cardType].text};
+    color: ${({ cardType }) => colors[cardType]?.text};
   }
 
   & h1 {
-    color: ${({ cardType }) => colors[cardType].text};
+    color: ${({ cardType }) => colors[cardType]?.text};
   }
 `;
 
@@ -42,14 +42,14 @@ export const ContentWrapper = styled.div`
 
   & button {
     margin: 20px 0 20px;
-    background-color: ${({ cardType }) => colors[cardType].text};
-    color: ${({ cardType }) => colors[cardType].background};
+    background-color: ${({ cardType }) => colors[cardType]?.text};
+    color: ${({ cardType }) => colors[cardType]?.background};
     border-color: transparent;
 
     &:hover {
-      background-color: ${({ cardType }) => colors[cardType].background};
-      color: ${({ cardType }) => colors[cardType].text};
-      border-color: ${({ cardType }) => colors[cardType].text};
+      background-color: ${({ cardType }) => colors[cardType]?.background};
+      color: ${({ cardType }) => colors[cardType]?.text};
+      border-color: ${({ cardType }) => colors[cardType]?.text};
     }
   }
 `;
