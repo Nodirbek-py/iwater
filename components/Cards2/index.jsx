@@ -15,6 +15,7 @@ const Cards2 = () => {
             price={item.price.amount}
             per={item.price.per}
             cardType={item.cardType}
+            id={item.id}
           />
         </CardWrapper>
       ))}

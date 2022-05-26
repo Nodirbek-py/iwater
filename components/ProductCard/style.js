@@ -19,7 +19,6 @@ export const Wrapper = styled.div`
 
   & h1 {
     color: ${({ cardType }) => colors[cardType].text};
-    font-size: 36px;
   }
 `;
 
@@ -36,6 +35,7 @@ export const ContentWrapper = styled.div`
 
   & > p {
     font-size: 15px;
+    ${(props) => (props.type !== undefined ? "font-size: 24px;" : null)}
     width: 80%;
     text-align: center;
   }
@@ -86,9 +86,9 @@ export const Price = styled.div`
 export const UList = styled.div`
   margin-top: 20px;
   padding: 0 20px;
-
   & li {
-    font-size: 15px;
+    ${(props) =>
+      props.type !== undefined ? "font-size: 20px;" : "font-size: 15px;"}
     line-height: 26px;
     word-break: break-word;
   }

@@ -10,8 +10,6 @@ const Team = () => {
   useEffect(() => {
     setIsIE(/MSIE|Trident/.test(window.navigator.userAgent));
     setIsEdge(/Edge/.test(window.navigator.userAgent));
-    console.log(/MSIE|Trident/.test(window.navigator.userAgent));
-    console.log(/Edge/.test(window.navigator.userAgent));
   }, []);
 
   const team = [
