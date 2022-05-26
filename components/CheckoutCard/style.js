@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 757px;
+  max-width: 600px;
   margin: 0 auto;
   margin-top: 210px;
   text-align: center;
@@ -21,8 +21,6 @@ export const Wrapper = styled.div`
   }
 
   & .price-wrapper {
-    bottom: 100px;
-
     @media (max-width: 440px) {
       bottom: 20px;
     }

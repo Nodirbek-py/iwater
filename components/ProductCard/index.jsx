@@ -1,11 +1,11 @@
 import Image from "next/image";
+
 import Text from "../../shared/text";
 import Button from "../../shared/button";
 import {
   Wrapper,
   ImageWrapper,
   Price,
-  InfoWrapper,
   PriceWrapper,
   UList,
   ContentWrapper,
@@ -21,6 +21,8 @@ const ProductCard = ({
   cardType,
   buttonTitle,
   btnOnClick,
+  id,
+  type,
 }) => {
   return (
     <Wrapper cardType={cardType}>
@@ -32,12 +34,14 @@ const ProductCard = ({
           height={img.height}
         />
       </ImageWrapper>
-      <ContentWrapper cardType={cardType}>
-        <Text type="h3" align="center">
+      <ContentWrapper type={type} cardType={cardType}>
+        <Text type={type ? "h2" : "h3"} align="center">
           {title}
         </Text>
-        <Text align="center">{warranty}</Text>
-        <UList className="ulist">
+        <Text type={type ? "p" : null} align="center">
+          {warranty}
+        </Text>
+        <UList className="ulist" type={type}>
           {info.map((item, key) => (
             <li key={key}>{item}</li>
           ))}
@@ -51,7 +55,7 @@ const ProductCard = ({
           </Price>
           <Button
             onClick={btnOnClick}
-            href="/precheckout/"
+            href={"/precheckout/" + id}
             text={buttonTitle ? buttonTitle : "Buy Now"}
           />
         </PriceWrapper>

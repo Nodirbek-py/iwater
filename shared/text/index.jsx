@@ -7,7 +7,7 @@ const Text = ({ type, children, align }) => {
     return <Heading2 align={align}>{children}</Heading2>;
   } else if (type === "h3") {
     return <Heading3 align={align}>{children}</Heading3>;
-  } else {
+  } else {   
     return <Description align={align}>{children}</Description>;
   }
 };

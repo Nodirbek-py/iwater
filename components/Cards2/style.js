@@ -22,7 +22,6 @@ export const Wrapper = styled.div`
 `;
 
 export const CardWrapper = styled.div`
-  width: 345px;
   display: flex;
   align-items: flex-end;
 `;
