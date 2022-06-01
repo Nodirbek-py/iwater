@@ -53,11 +53,11 @@ const ProductCard = ({
             </Text>
             <Text type="p">{per}</Text>
           </Price>
-          <Button
-            onClick={btnOnClick}
-            href={"/precheckout/" + id}
-            text={buttonTitle ? buttonTitle : "Buy Now"}
-          />
+          {buttonTitle ? (
+            <Button onClick={btnOnClick} text={buttonTitle} />
+          ) : (
+            <Button href={"/precheckout/" + id} text={"Buy Now"} />
+          )}
         </PriceWrapper>
       </ContentWrapper>
     </Wrapper>

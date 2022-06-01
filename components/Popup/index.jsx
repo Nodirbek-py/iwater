@@ -2,15 +2,30 @@ import Text from "../../shared/text";
 import Button from "../../shared/button";
 import { mockData } from "./config";
 
-import { Question, RadiosWrapper, Wrapper, RadioButton } from "./style";
+import {
+  Question,
+  RadiosWrapper,
+  Wrapper,
+  RadioButton,
+  InputWrapper,
+} from "./style";
+import { ContactInput } from "../Contact/style";
 
 const Popup = ({ btnOnClick }) => {
   return (
     <Wrapper>
-      <Text type="h2" align="center">
-        Questionnaire
+      <Text type="h3" align="center">
+        Contact
       </Text>
       <div>
+        <InputWrapper>
+          <ContactInput type="text" placeholder="Hotel name" />
+          <ContactInput type="text" placeholder="General manager name" />
+        </InputWrapper>
+        <InputWrapper>
+          <ContactInput type="text" placeholder="Phone number" />
+          <ContactInput type="text" placeholder="Email" />
+        </InputWrapper>
         {mockData.map((item) => (
           <>
             <Question>{item.question}</Question>
@@ -32,7 +47,7 @@ const Popup = ({ btnOnClick }) => {
           </>
         ))}
       </div>
-      <Button text="Add to Cart" onClick={btnOnClick} />
+      <Button text="Send" onClick={btnOnClick} />
     </Wrapper>
   );
 };
