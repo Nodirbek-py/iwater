@@ -6,7 +6,7 @@ import { BuyHeadings, BuyWrapper, ImageWrapper, VerticalImages } from "./style";
 
 const Buy = () => {
   return (
-    <BuyWrapper>
+    <BuyWrapper id="product">
       <div>
         <VerticalImages>
           <ImageWrapper>

@@ -31,7 +31,7 @@ const Cards = () => {
   ];
 
   return (
-    <CardsWrapper>
+    <CardsWrapper id="how">
       <TextWrapper>
         <Text type="h2">Keep your Shower the Way you Like it.</Text>
       </TextWrapper>

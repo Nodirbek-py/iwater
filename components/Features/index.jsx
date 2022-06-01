@@ -36,7 +36,7 @@ const features = [
 
 const Features = () => {
   return (
-    <FeaturesWrapper>
+    <FeaturesWrapper id="features">
       <Text type="h3" align="center">
         Features & Benefits
       </Text>

@@ -28,7 +28,7 @@ const Team = () => {
   ];
 
   return (
-    <TeamWrapper>
+    <TeamWrapper id="team">
       <Text type="h3" align="center">
         Our Team
       </Text>

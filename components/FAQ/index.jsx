@@ -43,7 +43,7 @@ const FAQ = () => {
   };
 
   return (
-    <FAQWrapper>
+    <FAQWrapper id="faq">
       <Text type="h3" align="center">
         Frequently Asked Questions
       </Text>

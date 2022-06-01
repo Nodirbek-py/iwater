@@ -41,7 +41,7 @@ const References = () => {
   ];
 
   return (
-    <ReferencesWrapper>
+    <ReferencesWrapper id="testimonials">
       <Text type="h3" align="center">
         References
       </Text>

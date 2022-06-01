@@ -10,12 +10,12 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { width } = useWindowDimensions();
   const navigation = [
-    "Home",
-    "How it Works?",
-    "Product",
-    "Features",
-    "Testimonials",
-    "Our Team",
+    { title: "Home", href: "/" },
+    { title: "How it Works?", href: "#how" },
+    { title: "Product", href: "#product" },
+    { title: "Features", href: "#features" },
+    { title: "Testimonials", href: "#testimonials" },
+    { title: "Our Team", href: "#team" },
   ];
 
   return (
@@ -32,9 +32,9 @@ const Navbar = () => {
         {width > 1024 ? (
           <NavLinks>
             {navigation.map((nav, i) => (
-              <Link href={"#" + nav} key={i}>
+              <Link href={nav.href} key={i}>
                 <NavLink style={i === 0 ? { fontWeight: "bold" } : {}}>
-                  {nav}
+                  {nav.title}
                 </NavLink>
               </Link>
             ))}
@@ -43,9 +43,9 @@ const Navbar = () => {
           open && (
             <Dropdown>
               {navigation.map((nav, i) => (
-                <Link href={"#" + nav} key={i}>
+                <Link href={nav.href} key={i}>
                   <NavLink style={i === 0 ? { fontWeight: "bold" } : {}}>
-                    {nav}
+                    {nav.title}
                   </NavLink>
                 </Link>
               ))}
