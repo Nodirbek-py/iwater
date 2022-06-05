@@ -33,6 +33,11 @@ export const InputWrapper = styled.div`
   justify-content: space-between;
   & > input {
     width: 48%;
+    color: #123a55;
+    font-size: 18px;
+  }
+  & > input::placeholder {
+    color: #123a5599;
   }
 `;
 

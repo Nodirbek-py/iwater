@@ -1,16 +1,16 @@
 export const mockData = [
   {
     name: "question1",
-    question: "How many rooms does your hotel have?",
-    options: ["30 Rooms", "50 Rooms", "100 Rooms", "200 Rooms"],
+    question: "How many showers do you have?",
+    options: ["0-50", "50-100", "100-150", "200+"],
   },
   {
     name: "question2",
     question: "What's important for you?",
     options: [
-      "Water savings (average 20%)",
-      "Intelligent Utility Insights (how much, when it's used)",
-      "Maintaining the guest shower experience",
+      "Water & Energy Savings! (Save water and energy by going green)",
+      "Utility usage insights (prediction algorithms, data dashboard)",
+      "Reducing Utility Costs (go green and save real dollars)",
     ],
   },
 ];
